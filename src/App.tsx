@@ -14,14 +14,14 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
-  const [currentUser, setCurrentUser] = useState<string>("per");
+  const [currentUser, setCurrentUser] = useState<string>("");
   const [currentFriend, setCurrentFriend] = useState<string>("global");
 
   if (!currentUser) {
     return (
       <RegisterUserForm
         onChange={(userName) => {
-          setCurrentFriend(userName);
+          setCurrentUser(userName);
         }}
       />
     );
@@ -32,7 +32,7 @@ function App() {
       value={{
         currentFriend,
         setCurrentFriend,
-        currentUser: "per",
+        currentUser,
       }}
     >
       <AppWrapper>

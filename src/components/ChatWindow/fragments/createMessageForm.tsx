@@ -57,7 +57,7 @@ export const CreateMessageForm = (p: TProps) => {
         type="text"
         placeholder="Message"
       ></Input>
-      <Button type="submit">Send x</Button>
+      <Button type="submit">Send</Button>
     </SendForm>
   );
 };

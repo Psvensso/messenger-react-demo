@@ -22,6 +22,7 @@ export const RegisterUserForm = (p: TProps) => {
 
   return (
     <UserForm
+      id="register-user"
       onSubmit={() => {
         p.onChange(name);
       }}
